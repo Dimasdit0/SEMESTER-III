@@ -1,0 +1,90 @@
+package P8;
+
+class Cat {
+    private String name;
+    private String gender;
+    private int age;
+    private double weight;
+    private String color;
+
+    public Cat(String name, String gender, int age, double weight, String color){
+        this.name = name;
+        this.gender = gender;
+        this.age = age;
+        this.weight = weight;
+        this.color = color;
+    }
+    
+    public String getName() {
+        return name;
+    }
+    
+    public String getGender() {
+        return gender;
+    }
+
+    public int getAge() {
+        return age;
+    }
+    
+    public double getWeight() {
+        return weight;
+    }
+
+    public String getColor() {
+        return color;
+    }
+
+    public void breathe() {
+        System.out.println(name + " is breathing.");
+    }
+
+    public void eat(String food) {
+        System.out.println(name + " is eating " + food + ".");
+    }
+
+    public void run(String destination) {
+        System.out.println(name + " is running to " + destination + ".");
+    }
+
+    public void sleep(int hours) {
+        System.out.println(name + " is sleeping for " + hours + " hours.");
+    }
+
+    public void meow() {
+        System.out.println(name + " says meow!");
+    }
+}
+
+public class week7 {
+    public static void main(String[] args) {
+        Cat myCat1 = new Cat("Oscar", "Male", 3, 4.5, "Gray");
+        Cat myCat2 = new Cat("Luna", "Female", 2, 3.8, "White");
+
+        System.out.println("=== Cat 1 ===");
+        System.out.println("Name: " + myCat1.getName());
+        System.out.println("Gender: " + myCat1.getGender());
+        System.out.println("Age: " + myCat1.getAge() + " years");
+        System.out.println("Weight: " + myCat1.getWeight() + " kg");
+        System.out.println("Color: " + myCat1.getColor());
+
+        myCat1.breathe();
+        myCat1.eat("fish");
+        myCat1.run("garden");
+        myCat1.sleep(8);
+        myCat1.meow();
+
+        System.out.println("\n=== Cat 2 ===");
+        System.out.println("Name: " + myCat2.getName());
+        System.out.println("Gender: " + myCat2.getGender());
+        System.out.println("Age: " + myCat2.getAge() + " years");
+        System.out.println("Weight: " + myCat2.getWeight() + " kg");
+        System.out.println("Color: " + myCat2.getColor());
+
+        myCat2.breathe();
+        myCat2.eat("chicken");
+        myCat2.run("bedroom");
+        myCat2.sleep(10);
+        myCat2.meow();
+    }
+}
