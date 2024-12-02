@@ -1,2 +1,0 @@
-QUERY UNION adalah fungsi untuk menggabungkan data atau lenih query SELECT dalam datu hasil keluaran. Dengan syarat query SELECT tersebut harus memiliki jumlah field yang sama.
-UNION digunakan untuk penyederhanaan perintah persayaratan OR yang bertingkat. UNION dapat dikatakan sebagai perintah untuk menggabungkan hasil query sql yang fungsinya sama dengan perintah OR.
