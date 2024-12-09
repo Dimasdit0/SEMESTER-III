@@ -1,0 +1,12 @@
+SELECT nama_tanaman, harga_per_kg FROM tanaman ORDER BY harga_per_kg DESC LIMIT 2;
+
+SELECT DISTINCT jenis_tanaman FROM tanaman;
+
+SELECT AVG (harga_per_kg) FROM tanaman;
+
+SELECT nama_tanaman, harga_per_kg FROM tanaman WHERE harga_per_kg >(SELECT AVG (harga_per_kg) FROM tanaman);
+
+SELECT nama_tanaman FROM tanaman WHERE id_tanaman IN (SELECT id_tanaman FROM panen WHERE hasil_kg >= '40');
+
+SELECT nama_tanaman FROM tanaman WHERE  jenis_tanaman = 'rimpang' AND id_tanaman IN (SELECT id_tanaman FROM perawatan WHERE biaya > 10000);
+	
