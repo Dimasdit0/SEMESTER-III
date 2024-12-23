@@ -1,0 +1,34 @@
+CREATE TABLE buku (
+id_buku int PRIMARY KEY,
+judul_buku varchar(100),
+jumlah_halaman int);
+
+insert into buku (id_buku, judul_buku, jumlah_halaman)
+values
+(1, "Dasar Pemrograman", 250),
+(2, "Jaringan Komputer", 300),
+(3, "Algoritma Dan Struktur Data", 200);
+
+C:\xampp\mysql\bin
+
+mysql -u root
+
+show databases;
+
+CREATE USER 'Username'@'localhost' IDENTIFIED BY 'Password';
+
+akses user
+
+mysql -u 'Username' -p
+
+GRANT ALL PRIVILEGES ON *.* TO 'Username'@'localhost';
+
+use 'Nama Database';
+
+show tables;
+
+select * from 'Nama Tabel';
+
+GRANT ALL PRIVILEGES ON namadatabase.nama_tabel TO 'username'@'localhost';
+REVOKE ALL PRIVILEGES ON p13.buku FROM 'alamak'@'localhost';
+GRANT delete ON p13.buku TO 'alamak'@'localhost';
